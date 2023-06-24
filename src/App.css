@@ -1,38 +1,70 @@
-.App {
+/* App.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* OrderTabs.css */
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li.active {
+    background-color: #ccc;
 }
 
-.App-link {
-  color: #61dafb;
+/* OrderTable.css */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Pagination.css */
+ul {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+        padding: 0;
+}
+
+li {
+    cursor: pointer;
+    margin: 20px 5px;
+    padding: 3px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+li.active {
+    background-color: #ccc;
 }
